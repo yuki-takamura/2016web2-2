@@ -7,28 +7,19 @@
   <script type = "text/javascript">
     $(function(){
       $("p").css("color","red");
+      $("#myDiv").css("border","3px solid yellow");
       $("#toggle").on("click",function(){
         $("#target").toggle("show");
       });
     });
-   $("#right").click(funciton(){
-     $(".block").animate({"left": "+=50px"},"slow");
-      });
-  
-  $("#left").clik(funciton(){
-    $(".block").animate({"left": "-=50px"},"slow");
-      });
   </script>
   
 </head>
 <body>
   <div id="target">表示・非表示される要素</div>
   <button id ="toggle">切り替え</button>
-  
   <p>テスト</p>
-  <button id ="left">&lt;&lt;</button>
-  <button id="right">&gt;&gt;</button>
-  <div class ="block"></div>
+  <div id="myDiv">test</div>
   
   
 </body>
