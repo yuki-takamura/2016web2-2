@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <title>初めてのjQuery</title>
+  <script type = "text/javascript" src = "https://code.jquey-3.1.0.min.js"></script>
+  <script type = "text/javascript">
+    $(function(){
+      $("#toggle").on("click",function(){
+        $("#target").toggle("show");
+      });
+    });
+  </script>
+  
+</head>
+<body>
+  <div id="target">表示・非表示される要素</div>
+  <button id ="toggle">切り替え</button>
+</body>
+</html>
